@@ -7,7 +7,7 @@ class BooksController < ApplicationController
   def show
     @book = Book.find(params[:id])
     @book_new = Book.new
-    #応急処置しただけ、後で変えないといけない
+    @comment = BookComment.new
   end
 
   def create
